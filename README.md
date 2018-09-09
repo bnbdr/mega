@@ -1,9 +1,10 @@
 # Make explorer.exe great again
-This 'fixes' the annoying issue with `explorer.exe` when opening an exe from the navigation bar:
+This 'fixes' the annoying issue with `explorer.exe` that happens when opening an exe from the navigation bar:
 
 ![](example.gif)
 
-For more info [read this]()
+
+For more info [read this](//bnbdr.github.io/posts/mega/).
 
 ## THIS PATCHES `ExplorerFrame.dll` - USE AT YOUR OWN RISK
 ____
