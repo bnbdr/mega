@@ -1,3 +1,4 @@
+import platform
 import os
 import collections
 import argparse
@@ -351,6 +352,10 @@ def main(infile, outfile, dbg):
 
 
 if __name__ == '__main__':
+    if platform.machine() == 'AMD64' and platform.architecture()[0] == '32bit':
+        print('this is a 64 bit windows, please run using a 64 bit python')
+        exit(1)
+
     defpath = r'C:\windows\system32\explorerframe.dll'
     parser = argparse.ArgumentParser()
     parser.add_argument('-i', dest='infile',
